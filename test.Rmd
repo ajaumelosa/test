@@ -1,0 +1,40 @@
+---
+title: "test"
+author: "alejandro"
+date: "2024-01-29"
+output: 
+  html_document: 
+    toc: yes
+    highlight: haddock
+    theme: yeti
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Section header
+
+This is the first section. I can make words **bold**
+
+## This is a subsection
+
+### This is a subsubsection
+
+We make italics like *this*
+
+```{r}
+#| echo: false
+
+important_number <- 3 + 17 * 12 / 2
+
+````
+
+This is text and this is my number: `r important_number`.
+
+
+
+
+
+
+
