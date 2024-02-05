@@ -33,6 +33,19 @@ important_number <- 3 + 17 * 12 / 2
 This is text and this is my number: `r important_number`.
 
 
+```{r}
+
+tonic_syllable_dur <- 156
+atonic_syllable_dur <- 202
+
+dur_diff <- tonic_syllable_dur - atonic_syllable_dur
+
+tonic_syllable_int <- 78.83
+atonic_syllable_int <- 69.91
+
+int_diff <- tonic_syllable_int - atonic_syllable_int
+
+```
 
 
 
