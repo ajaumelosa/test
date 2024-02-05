@@ -3,9 +3,9 @@
     "path": "~/Desktop/test/test.Rmd",
     "project_path": "test.Rmd",
     "type": "r_markdown",
-    "hash": "2479070641",
+    "hash": "0",
     "contents": "",
-    "dirty": false,
+    "dirty": true,
     "created": 1707155364554.0,
     "source_on_save": false,
     "relative_order": 1,
@@ -13,8 +13,8 @@
         "tempName": "Untitled1",
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "47,0",
-        "scrollLine": "29",
+        "cursorPosition": "32,57",
+        "scrollLine": "21",
         "last_setup_crc32": "452a548bb338d19"
     },
     "folds": "",
@@ -22,7 +22,7 @@
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1707156466469,
+    "last_content_update": 1707156619731,
     "read_only": false,
     "read_only_alternatives": []
 }
