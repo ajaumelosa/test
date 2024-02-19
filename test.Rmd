@@ -11,6 +11,12 @@ editor_options:
   chunk_output_type: console
 ---
 
+```{r}
+library(tidyverse)
+```
+
+
+
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
@@ -75,5 +81,71 @@ dat |>
 
 
 ```
+
+```{r}
+
+for (i in 1:10) {
+  print(i)
+}
+
+print(i)
+
+for (i in 1:10) {
+  print(i +1)
+}
+
+for (i in 1:10) {
+  print(i*2)
+}
+
+for (i in 1:10) {
+  print(i^2)
+}
+
+
+x <- 1:10
+
+for (i in x) {
+  print(i)
+}
+
+
+```
+
+
+```{r}
+
+glimpse(dat)
+dim(dat)
+str(dat)
+summary(dat)
+head(dat)
+
+
+dat %>%
+  select(id, vowel)
+
+dat %>%
+  filter(vowel == "e")
+
+dat %>%
+  filter(vowel != "e")
+
+dat %>%
+  filter(f0 >= 150)
+
+dat %>%
+  filter(f0 >= 150, int >= 60)
+
+
+```
+
+
+
+
+
+
+
+
 
 

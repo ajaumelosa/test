@@ -11,6 +11,12 @@ editor_options:
   chunk_output_type: console
 ---
 
+```{r}
+library(tidyverse)
+```
+
+
+
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
@@ -104,10 +110,35 @@ for (i in x) {
 }
 
 
-
 ```
 
 
+```{r}
+
+glimpse(dat)
+dim(dat)
+str(dat)
+summary(dat)
+head(dat)
+
+
+dat %>%
+  select(id, vowel)
+
+dat %>%
+  filter(vowel == "e")
+
+dat %>%
+  filter(vowel != "e")
+
+dat %>%
+  filter(f0 >= 150)
+
+dat %>%
+  filter(f0 >= 150, int >= 60)
+
+
+```
 
 
 
