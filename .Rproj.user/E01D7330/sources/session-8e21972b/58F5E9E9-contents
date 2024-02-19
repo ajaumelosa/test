@@ -7,6 +7,8 @@ output:
     toc: yes
     highlight: haddock
     theme: yeti
+editor_options: 
+  chunk_output_type: console
 ---
 
 ```{r setup, include=FALSE}
@@ -46,6 +48,71 @@ atonic_syllable_int <- 69.91
 int_diff <- tonic_syllable_int - atonic_syllable_int
 
 ```
+
+
+```{r}
+library(tidyverse)
+
+```
+
+```{r}
+dat <- read_csv("stress.csv")
+```
+
+```{r}
+
+dat |>
+  pivot_longer(cols = f0:dur, names_to = "measure", values_to = "val") |>
+  ggplot() +
+  aes(x = measure, y = val, fill= vowel) +
+  geom_boxplot()
+
+dat |>
+  pivot_longer(cols = f0:dur, names_to = "measure", values_to = "val") |>
+  group_by(vowel, measure) |>
+  summarise(avg = mean(val)) |>
+  pivot_wider(names_from = "vowel", values_from = "avg")
+
+
+```
+
+```{r}
+
+for (i in 1:10) {
+  print(i)
+}
+
+print(i)
+
+for (i in 1:10) {
+  print(i +1)
+}
+
+for (i in 1:10) {
+  print(i*2)
+}
+
+for (i in 1:10) {
+  print(i^2)
+}
+
+
+x <- 1:10
+
+for (i in x) {
+  print(i)
+}
+
+
+
+```
+
+
+
+
+
+
+
 
 
 
